@@ -1,0 +1,38 @@
+.DropDown {
+	position: relative;
+	border: 1px solid rgba(100, 100, 100, 0.3);
+	width: max-content;
+	height: min-content;
+	padding: 0.5rem 0.5rem 0.5rem 1rem;
+	border-radius: 2rem;
+	cursor: pointer;
+}
+.DropDown i {
+	margin-left: 1.5rem;
+	transition: all 0.3s;
+}
+.DropDown i.active {
+	transform: rotate(180deg);
+}
+.DropDown ul {
+	opacity: 0;
+	visibility: hidden;
+	width: max-content;
+	position: absolute;
+	top: 110%;
+	left: 0;
+	list-style: none;
+	background-color: #001232;
+	border: 1px solid rgba(100, 100, 100, 0.3);
+	padding: 1rem 2rem 1rem 1rem;
+	text-align: left;
+	transition: all 0.5s;
+	z-index: 1;
+}
+.DropDown ul.active {
+	opacity: 1;
+	visibility: visible;
+}
+.DropDown ul li {
+	padding: 0.5rem 0;
+}

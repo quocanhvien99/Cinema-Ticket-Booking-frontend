@@ -1,0 +1,69 @@
+.Register {
+	background-image: url('../../assets/account-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 10rem 0;
+}
+.Register .form {
+	text-align: left;
+	color: #fff;
+	box-shadow: 0px 0px 29.4px 0.6px rgb(0 0 0 / 50%);
+	padding: 4rem 3rem;
+}
+.Register .form > * {
+	display: block;
+}
+.Register .form h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 3rem;
+}
+.Register .form label {
+	text-transform: uppercase;
+	font-size: large;
+	color: #ccc;
+	margin-bottom: 1rem;
+}
+.Register .form label::after {
+	content: '*';
+	color: red;
+}
+.Register .form input {
+	width: 100%;
+	outline: none;
+	font-size: large;
+	color: #fff;
+	background-color: transparent;
+	padding: 0.5rem;
+	border: none;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+	margin-bottom: 1.5rem;
+}
+.Register .form input:focus {
+	border-bottom: 1px solid red;
+}
+.Register .form input::placeholder {
+	color: #4c588f;
+}
+.Register .form .btn {
+	background-color: #aa52a1;
+	border-radius: 2rem;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: large;
+	font-weight: 700;
+	width: max-content;
+	padding: 0.5rem 2rem;
+	text-align: center;
+	margin: 3rem auto 2rem auto;
+	cursor: pointer;
+}
+.Register .form > div:last-child {
+	text-align: center;
+}
+.Register .form a {
+	color: #31d7a9;
+	text-decoration: none;
+}

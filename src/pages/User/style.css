@@ -1,0 +1,30 @@
+.User .wrapper {
+	min-height: 100vh;
+	color: #fff;
+	text-align: left;
+}
+.User .wrapper h2 {
+	margin: 2rem 0;
+}
+.User .wrapper ul {
+	list-style: none;
+}
+.User .wrapper li {
+	border: 1px solid #fff;
+	padding: 1rem 2rem;
+	background-color: #001539;
+}
+.User .wrapper li .movie-name {
+	text-transform: capitalize;
+	font-size: x-large;
+	font-weight: 500;
+}
+.User .wrapper li > div:last-child {
+	color: rgba(200, 200, 200, 085);
+	display: flex;
+	justify-content: space-between;
+}
+.User .wrapper li > div:last-child .price {
+	color: #fff;
+	font-size: large;
+}

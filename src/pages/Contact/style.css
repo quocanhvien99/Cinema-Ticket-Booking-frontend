@@ -1,0 +1,24 @@
+.Contact {
+	text-align: left;
+	color: #fff;
+}
+.Contact h2 {
+	margin: 2rem 0;
+}
+.Contact h3 {
+	font-size: larger;
+	border-bottom: 1px solid #fff;
+	padding: 0.5rem 0;
+	margin-bottom: 1rem;
+}
+.Contact .map_container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+.Contact iframe {
+	width: 70%;
+}
+.Contact .contact {
+	margin-bottom: 2rem;
+}

@@ -1,0 +1,176 @@
+.movie-detail {
+	margin-top: 2rem;
+}
+.movie-detail > .container > div {
+	display: flex;
+	margin-bottom: 3rem;
+}
+.movie-detail > .container > div .poster {
+	width: 25%;
+	z-index: 1;
+}
+.movie-detail > .container > div .poster img {
+	width: 100%;
+}
+.movie-detail > .container > div .detail {
+	text-align: left;
+	flex-grow: 1;
+	padding: 0 2rem;
+}
+.movie-detail > .container > div .detail .name {
+	text-transform: capitalize;
+	font-size: xx-large;
+	font-weight: 600;
+	margin-bottom: 0.3rem;
+}
+.movie-detail > .container > div .detail .language {
+	text-transform: uppercase;
+	font-size: small;
+	color: #86ace5;
+	margin-bottom: 1.5rem;
+}
+.movie-detail > .container > div .detail .genre {
+	display: flex;
+	margin-bottom: 1rem;
+}
+.movie-detail > .container > div .detail .genre div {
+	border: 1px solid rgba(100, 100, 100, 0.3);
+	border-radius: 2rem;
+	padding: 0.5rem 1rem;
+	text-transform: uppercase;
+	font-size: small;
+	margin-right: 1rem;
+}
+.movie-detail > .container > div .detail .time {
+	display: flex;
+	color: #86ace5;
+}
+.movie-detail > .container > div .detail .time i {
+	margin-right: 0.5rem;
+}
+.movie-detail > .container > div .detail .time div {
+	margin-right: 1rem;
+}
+.movie-detail > .container > div .detail .book {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.movie-detail > .container > div .detail .book .score {
+	display: flex;
+	z-index: 1;
+}
+.movie-detail > .container > div .detail .book .score > div {
+	margin-right: 2rem;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: large;
+}
+.movie-detail > .container > div .detail .book .score > div > div {
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+.movie-detail > .container > div .detail .book .score > div img {
+	margin-right: 0.5rem;
+}
+.movie-detail > .container > div .detail .book .book-btn {
+	display: flex;
+	align-items: center;
+	height: fit-content;
+	z-index: 1;
+	font-size: large;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: red;
+	padding: 1rem 1.5rem;
+	overflow: visible;
+	border-radius: 2rem;
+	background-image: -webkit-linear-gradient(
+		169deg,
+		#5560ff 17%,
+		#aa52a1 63%,
+		#ff4343 100%
+	);
+	cursor: pointer;
+}
+.movie-detail > .container > div .detail .book-wrapper {
+	position: relative;
+	margin-top: 3rem;
+	padding: 2rem 0;
+}
+.movie-detail > .container > div .detail .book-wrapper .bg {
+	background-color: #032055;
+	width: 150vw;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -50vw;
+	z-index: 0;
+	border: 1px solid rgba(220, 220, 220, 0.2);
+}
+
+@media screen and (max-width: 992px) {
+	.movie-detail > .container > div .poster {
+		display: none;
+	}
+}
+@media screen and (max-width: 768px) {
+	.movie-detail > .container > div .detail .book .score {
+		margin-bottom: 1rem;
+	}
+	.movie-detail > .container > div .detail .book .score {
+		width: 100%;
+		justify-content: space-between;
+	}
+}
+
+.movie-detail > .container > div:last-child {
+	display: block;
+	text-align: left;
+}
+.movie-detail > .container > div h2 {
+	text-transform: uppercase;
+	margin: 1.5rem 0;
+	padding-bottom: 1rem;
+	border-bottom: 2px dashed rgba(255, 255, 255, 0.1);
+}
+.movie-detail > .container > div .trailer div {
+	display: flex;
+	justify-content: center;
+}
+.movie-detail > .container > div iframe {
+	border: none;
+}
+.movie-detail > .container > div .summary p::first-letter {
+	text-transform: capitalize;
+}
+.movie-detail > .container > div .actor {
+	display: flex !important;
+	flex-direction: column;
+	align-items: center;
+}
+.movie-detail > .container > div .actor > div:first-child {
+	height: 150px;
+	width: 150px;
+	padding: 0.5rem;
+	border: 1px solid #31d7a9;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+}
+.movie-detail > .container > div .cast .pic {
+	width: 100%;
+	height: 100%;
+	border: 3px solid #31d7a9;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.movie-detail > .container > div .cast .pic img {
+	width: 100%;
+}
+.movie-detail > .container > div .cast .name {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: large;
+	font-weight: 600;
+}

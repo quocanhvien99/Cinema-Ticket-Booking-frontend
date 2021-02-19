@@ -1,0 +1,71 @@
+.movie-list .container {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.filter-bar {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid rgba(100, 100, 100, 0.3);
+	padding: 1rem 2rem;
+	border-radius: 0.3rem;
+}
+.filter-bar > div {
+	display: flex;
+	margin-right: 2rem;
+	align-items: center;
+}
+.filter-bar > div > div {
+	margin-right: 1.5rem;
+}
+.filter-bar > div:last-child {
+	margin-left: auto;
+	margin-right: 0;
+}
+.filter-bar > div .button {
+	font-size: larger;
+	border: 1px solid rgba(100, 100, 100, 0.3);
+	border-radius: 1.5rem;
+	padding: 0.5rem 1.5rem;
+	cursor: pointer;
+}
+.filter-bar > div .button.active {
+	color: #31d7a9;
+}
+.movie-list .paginate {
+	width: fit-content;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0 auto;
+}
+.movie-list .paginate li {
+	margin: 0 0.5rem;
+}
+.movie-list .paginate li a {
+	border-radius: 50%;
+	padding: 0.5rem 1rem;
+	outline: none;
+	font-size: large;
+	font-weight: 700;
+	color: #7a89bb;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.movie-list .paginate li a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.movie-list .paginate li.selected a {
+	color: #fff;
+	background-image: -webkit-linear-gradient(
+		169deg,
+		#5560ff 17%,
+		#aa52a1 63%,
+		#ff4343 100%
+	);
+}
+@media screen and (max-width: 992px) {
+	.filter-bar > div:last-child {
+		width: 100%;
+	}
+}

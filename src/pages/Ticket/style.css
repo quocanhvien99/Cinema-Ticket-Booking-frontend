@@ -1,0 +1,147 @@
+.Ticket {
+	background-color: #001232;
+	color: #fff;
+}
+.Ticket .book-section {
+	height: 130vh;
+	padding-top: 3rem;
+}
+.Ticket .book-section .picker {
+	border: 1px solid rgba(100, 100, 100, 0.4);
+	border-radius: 0.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0.5rem 2rem;
+	text-align: left;
+	cursor: pointer;
+}
+.Ticket .book-section .picker:not(.picker:first-child) > div {
+	border: 1px solid #aaa;
+}
+.Ticket .book-section .picker:not(.picker:first-child) > div.active {
+	border: 1px solid #fff;
+}
+.Ticket .book-section .picker:not(.picker:first-child) > div:hover {
+	border: 1px solid #fff;
+}
+.Ticket .book-section .date > div {
+	display: flex;
+	border-radius: 0.5rem;
+	padding: 0 1rem;
+	align-items: center;
+}
+.Ticket .book-section .date > div:hover {
+	border: 2px solid #fff;
+}
+.Ticket .book-section .date > div.active {
+	border: 2px solid #fff;
+}
+.Ticket .book-section .date > div > div:first-child {
+	font-size: small;
+}
+.Ticket .book-section .date > div > .day {
+	font-size: xx-large;
+	font-weight: 600;
+	margin-left: 0.5rem;
+}
+.Ticket .book-section .time > div {
+	padding: 0 2rem;
+	margin-right: 0.5rem;
+}
+.Ticket .book-section .room > div {
+	width: 3rem;
+	height: 3rem;
+	margin-right: 0.5rem;
+	font-size: x-large;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Ticket .book-section .picker span {
+	margin-right: 1rem;
+}
+.Ticket .book-section .choose-seat {
+	margin-top: 3rem;
+}
+.Ticket .book-section .choose-seat .screen {
+	width: 20rem;
+	height: 3rem;
+	border-top: 2px solid #fff;
+	border-radius: 50%;
+	position: relative;
+	margin: 0 auto 2rem auto;
+}
+.Ticket .book-section .choose-seat .screen::after {
+	content: 'màn hình';
+	text-transform: uppercase;
+	position: absolute;
+	top: 20%;
+	transform: translateX(-50%);
+}
+.Ticket .book-section .choose-seat span {
+	font-weight: 600;
+}
+.Ticket .book-section .choose-seat .row {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: min-content;
+	margin: 0 auto;
+}
+.Ticket .book-section .choose-seat .seat {
+	width: 2rem;
+	height: 2rem;
+	background-color: #99dade;
+	margin: 1rem;
+	border-radius: 0.3rem;
+	cursor: pointer;
+}
+.Ticket .book-section .choose-seat .seat.lock {
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+.Ticket .book-section .choose-seat .seat.active {
+	background-color: #ff9a00;
+}
+.Ticket .book-section .description {
+	margin-top: 3rem;
+	display: flex;
+	justify-content: flex-end;
+}
+.Ticket .book-section .description > div {
+	display: flex;
+	align-items: center;
+}
+.Ticket .book-section .total {
+	width: max-content;
+	margin-left: auto;
+	font-size: large;
+}
+.Ticket .book-section .buy {
+	background-color: red;
+	width: 10rem;
+	height: 3rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	margin: 2rem auto;
+	cursor: pointer;
+}
+.Ticket .book-section .buy div {
+	height: 100%;
+	border: 2px dashed rgba(0, 0, 0, 0.4);
+	border-radius: 0.3rem;
+	text-transform: capitalize;
+}
+@media screen and (max-width: 576px) {
+	.Ticket .book-section .choose-seat .seat {
+		width: 1rem;
+		margin: 0.5rem;
+	}
+	.Ticket .book-section .choose-seat .screen {
+		width: 10rem;
+	}
+	.Ticket .book-section .choose-seat .screen::after {
+		font-size: small;
+	}
+}

@@ -1,0 +1,101 @@
+.List {
+	width: 100%;
+	text-transform: capitalize;
+	text-align: left;
+}
+.List > div {
+	display: flex;
+	margin: 2rem 0;
+}
+.List > div .poster {
+	width: 25%;
+}
+.List > div .poster img {
+	width: 100%;
+}
+.List > div .info {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	padding-left: 2rem;
+	font-size: large;
+}
+.List > div .info div:not(div:first-child) {
+	margin: 0.5rem 0;
+}
+.List > div .info .name {
+	font-size: x-large;
+	font-weight: 600;
+}
+.List > div .info .time {
+	color: #31d7a9;
+}
+.List > div .info .genre > span > span {
+	margin: 0 1rem;
+}
+.List > div .info .score {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.List > div .info .score > div {
+	margin: 1.5rem 0;
+}
+.List > div .info .nav-movie {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	text-transform: none;
+	font-size: medium;
+	border-top: 1px solid rgba(100, 100, 100, 0.3);
+	border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+	padding: 1rem 0;
+}
+.List > div .info .nav-movie a {
+	color: #fff;
+	text-decoration: none;
+}
+.List > div .info .nav-movie > div {
+	display: flex;
+	align-items: center;
+	margin: 0 !important;
+}
+.List > div .info .nav-movie > div .thumb {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	margin-right: 1rem;
+	background-color: #032055;
+	border-radius: 10rem;
+}
+.List > div .info .nav-movie > div > div:last-child {
+	margin: 0;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+	.List > div .poster {
+		width: 40%;
+	}
+	.List > div .poster img {
+		height: 100%;
+	}
+}
+@media screen and (max-width: 576px) {
+	.List > div {
+		flex-direction: column;
+	}
+	.List > div .poster {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.List > div .poster img {
+		width: 100%;
+	}
+	.List > div .info {
+		padding: 0;
+	}
+}

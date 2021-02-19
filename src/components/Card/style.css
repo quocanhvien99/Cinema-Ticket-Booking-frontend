@@ -1,0 +1,47 @@
+.Card {
+	width: 100%;
+	background-color: #032055;
+	padding: 0 !important;
+	border-radius: 0.5rem;
+	color: #fff;
+	text-align: left;
+	font-weight: 600;
+	cursor: pointer;
+	overflow: hidden;
+}
+.Card .poster {
+	overflow: hidden;
+}
+.Card .poster img {
+	width: 100%;
+	height: 25rem;
+	transition: all 0.4s;
+}
+.Card:hover .poster img {
+	transform: scale(1.2);
+}
+.Card .name {
+	font-size: larger;
+	text-transform: capitalize;
+	padding: 1.5rem 0;
+	margin: 0 1.5rem !important;
+	transition: all 0.4s;
+	border-bottom: 1px dashed rgba(100, 100, 100, 0.3);
+	white-space: nowrap;
+	overflow: hidden;
+}
+.Card:hover .name {
+	color: #31d7a9;
+}
+.Card .score,
+.event {
+	padding: 1.5rem;
+	padding-bottom: 1.5rem;
+	display: flex;
+}
+.Card .score div {
+	display: flex;
+}
+.Card .score span {
+	margin: 0 1.5rem 0 0.5rem;
+}
