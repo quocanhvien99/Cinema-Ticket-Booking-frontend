@@ -128,12 +128,13 @@
 	height: 40px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	overflow: hidden;
 	border-radius: 50%;
 	border: 2px solid #000;
 }
 .navbar .menu > li.user-info img {
-	height: 110%;
+	height: 120%;
 }
 .navbar .menu > li.user-info > div.info::after {
 	content: '';
