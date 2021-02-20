@@ -5,6 +5,7 @@ import cgvlogo from '../../assets/cgvlogo.png';
 import usericon from '../../assets/usericon1.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../slices/userSlice';
+import { toggleScrollBtn } from '../../slices/scrollBtnSlice';
 
 export default function NavBar() {
 	const user = useSelector((state) => state.user);
@@ -27,8 +28,9 @@ export default function NavBar() {
 		window.onscroll = () => {
 			if (window.scrollY !== 0) setFixedNav(true);
 			else setFixedNav(false);
+			if (window.scrollY > 200) dispatch(toggleScrollBtn(true));
+			else dispatch(toggleScrollBtn(false));
 		};
-		console.log('render này');
 	});
 
 	return (

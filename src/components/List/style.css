@@ -27,6 +27,9 @@
 	font-size: x-large;
 	font-weight: 600;
 }
+.List > div .info .release-date {
+	text-transform: none;
+}
 .List > div .info .time {
 	color: #31d7a9;
 }

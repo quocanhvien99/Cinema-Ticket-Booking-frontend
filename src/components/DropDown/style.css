@@ -24,7 +24,6 @@
 	list-style: none;
 	background-color: #001232;
 	border: 1px solid rgba(100, 100, 100, 0.3);
-	padding: 1rem 2rem 1rem 1rem;
 	text-align: left;
 	transition: all 0.5s;
 	z-index: 1;
@@ -34,5 +33,5 @@
 	visibility: visible;
 }
 .DropDown ul li {
-	padding: 0.5rem 0;
+	padding: 1rem 2rem 1rem 1rem;
 }

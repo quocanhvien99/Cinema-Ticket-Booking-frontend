@@ -8,6 +8,7 @@ import ScrollToTop from './components/ScrollTotop/ScrollToTop';
 import { useDispatch } from 'react-redux';
 import { fetchUserInfo } from './api/user.api';
 import { login } from './slices/userSlice';
+import ScrollButton from './components/ScrollButton/ScrollButton';
 
 function App() {
 	const dispatch = useDispatch();
@@ -29,6 +30,7 @@ function App() {
 	return (
 		<div className="App">
 			<Spinner />
+			<ScrollButton />
 			<Router>
 				<ScrollToTop />
 				<Switch>

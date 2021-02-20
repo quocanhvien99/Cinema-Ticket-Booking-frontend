@@ -1,0 +1,39 @@
+html {
+	scroll-behavior: smooth;
+}
+#scroll-top-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	width: 2.7rem;
+	height: 2.7rem;
+	background-color: #31d7a9;
+	position: fixed;
+	/*bottom: 3%;*/
+	bottom: -10%;
+	right: 2%;
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 2;
+	transition: all 0.5s;
+}
+@keyframes btn-slide {
+	0% {
+		bottom: 100%;
+	}
+	50% {
+		bottom: 0%;
+	}
+	70% {
+		bottom: 5%;
+	}
+	100% {
+		bottom: 3%;
+	}
+}
+#scroll-top-btn.show {
+	animation-name: btn-slide;
+	animation-duration: 1s;
+	bottom: 3%;
+}

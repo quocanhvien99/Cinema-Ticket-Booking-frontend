@@ -7,20 +7,37 @@
 	position: sticky;
 	z-index: 4;
 	top: 0;
-	transition: background-color 1s ease-out;
 }
 @keyframes header-section {
 	0% {
-		top: -100%;
+		top: -10%;
+		opacity: 0;
+	}
+	75% {
+		top: -8%;
+		opacity: 0.1;
+	}
+	80% {
+		top: -5%;
+		opacity: 0.2;
+	}
+	90% {
+		top: -2%;
+		opacity: 0.3;
+	}
+	95% {
+		top: -1%;
+		opacity: 0.4;
 	}
 	100% {
 		top: 0;
+		opacity: 1;
 	}
 }
 .navbar.fixed {
 	position: fixed;
 	animation-name: header-section;
-	animation-duration: 0.5s;
+	animation-duration: 0.8s;
 	background-color: #0a1e5e;
 }
 .navbar .container {
@@ -45,7 +62,7 @@
 .navbar .menu .menu-item {
 	width: 10rem;
 	position: relative;
-	padding: 2rem 0;
+	padding: 1.5rem 0;
 }
 .navbar .menu .menu-item::after {
 	content: '';

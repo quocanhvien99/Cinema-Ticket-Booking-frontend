@@ -49,7 +49,7 @@ export default function List({ items }) {
 									)
 								)}
 							</div>
-							<div className="release-date">Release Date : {date}</div>
+							<div className="release-date">Khởi chiếu : {date}</div>
 							<div className="score">
 								<div>
 									<img src={tomato} alt="icon" />
