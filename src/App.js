@@ -4,6 +4,7 @@ import routes from './routes/RouteConfig';
 import './App.css';
 import './assets/bootstrap.min.css';
 import Spinner from './components/Spinner/Spinner';
+import ScrollToTop from './components/ScrollTotop/ScrollToTop';
 import { useDispatch } from 'react-redux';
 import { fetchUserInfo } from './api/user.api';
 import { login } from './slices/userSlice';
@@ -29,6 +30,7 @@ function App() {
 		<div className="App">
 			<Spinner />
 			<Router>
+				<ScrollToTop />
 				<Switch>
 					{routes.map((route) => (
 						<Route exact={route.exact} path={route.path} key={route.path}>

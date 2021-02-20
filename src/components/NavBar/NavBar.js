@@ -28,6 +28,7 @@ export default function NavBar() {
 			if (window.scrollY !== 0) setFixedNav(true);
 			else setFixedNav(false);
 		};
+		console.log('render này');
 	});
 
 	return (
