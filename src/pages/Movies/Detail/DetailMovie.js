@@ -143,7 +143,7 @@ export default function DetailMovie() {
 									</div>
 								</div>
 								<div className="book-btn" onClick={bookBtnHandle}>
-									book tickets
+									đặt vé
 								</div>
 							</div>
 							<div className="bg"></div>
