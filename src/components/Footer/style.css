@@ -50,7 +50,9 @@
 	text-decoration: none;
 	color: #fff;
 }
-
+.footer-section .footer-bottom span {
+	color: #31d7a9;
+}
 @media screen and (max-width: 992px) {
 	.footer-section .footer-bottom {
 		flex-flow: column-reverse;

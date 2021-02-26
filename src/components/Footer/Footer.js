@@ -36,7 +36,9 @@ export default function Footer() {
 				</div>
 				<div className="footer-bottom">
 					<div className="left">
-						<p>Copyright © 2021.All Rights Reserved By Quocanhvien99</p>
+						<p>
+							Copyright © 2021.All Rights Reserved By <span>Quocanhvien99</span>
+						</p>
 					</div>
 					<ul className="links">
 						<li>
