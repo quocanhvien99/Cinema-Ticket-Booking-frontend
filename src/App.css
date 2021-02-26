@@ -37,3 +37,11 @@
 		transform: translateY(0px);
 	}
 }
+
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+	background: #000;
+}
